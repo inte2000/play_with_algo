@@ -20,18 +20,27 @@
 | eq            | 迭代法，“线性代数方程组的求解”相关的内容                |
 | jitutonglong  | 1-6 鸡兔同笼问题的答案                                  |
 | equation_java | 迭代法，“非线性方程与牛顿迭代法”相关的内容的java版本    |
-|               |                                                         |
-|               |                                                         |
-|               |                                                         |
-|               |                                                         |
-|               |                                                         |
-|               |                                                         |
-|               |                                                         |
-|               |                                                         |
-|               |                                                         |
-|               |                                                         |
-
-                                                
+| integration_java | 迭代法，“迭代法计算定积分”相关的内容的java版本    |
+| eq_java | 迭代法，“线性代数方程组的求解”相关的内容的java版本    |
 
 
+
+## 本课程的参考资料
+
+1. Introduction.to.Algorithms（Second Edition） • Thomas H. Cormen、Charles E. Leiserson等 • MIT Press
+
+2. Data Abstraction And Problem Solving With C++ （Third Edition）• Frank M. Carrano、Janet J. Prichard  • Addison
+   Wesley
+
+3. 算法（第二版） • 
+
+4. Data Structures & Algorithms in Java • Robert Lafore • Sams
+
+5. Data Structures and Algorithms • Alfred V. Aho、John E. Hopcroft等 • Dr. Dobb's
+
+6. 算法艺术与信息学竞赛 • 刘汝加、黄亮 • 清华大学出版社
+
+7. 国际大学生程序设计竞赛例题解 • 郭嵩山、关沛勇等 • 电子工业出版社
+
+ 
 
