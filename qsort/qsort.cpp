@@ -3,25 +3,6 @@
 
 #include "stdafx.h"
 
-/*
-T DivideAndConquer(P)
-{
-    if(P可以直接解决)
-    {
-        T <- P的结果;
-        return T;
-    }
-
-    将P分解为子问题 {P1, P2,..., Pn};
-    for_each(Pi : {P1, P2,..., Pn})
-    {
-        ti <- DivideAndConquer(Pi); //递归解决子问题Pi
-    }
-    T <- Merge(t1, t2,...,tn); //合并子问题的解
-    
-    return T;
-}
-*/
 
 void exchange(int *arElem, int m, int n)
 {
@@ -70,3 +51,33 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
+bool IsNumberUsed(int num[], int idx, int i)
+{
+    for (int k = 0; k < idx; k++)
+    {
+        if (num[k] == i)
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+void EnumNumber(int num[], int idx)
+{
+    if (idx > 3) //枚举的有效idx是0-3，超过3了就是退出条件
+    {
+        return;
+    }
+
+    //对当前idx位置用数字 1-9 尝试
+    for (int i = 1; i <= 9; i++)
+    {
+        if (!IsNumberUsed(num, idx, i))
+        {
+            num[idx] = i;
+            EnumNumber(num, idx + 1); //继续枚举下一个位置
+        }
+    }
+}
