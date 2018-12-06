@@ -33,8 +33,9 @@
 | station_dp |  动态规划：装配线域工作站问题 |
 | triangle |  动态规划：凸多边形的三角剖分 |
 | MondriaanDream |  动态规划：铺瓷砖问题 |
-
-
+| blocks |  动态规划：方块消除 |
+| investment |  动态规划：投资问题 |
+| Matrix-chain |  动态规划：矩阵链乘问题 |
 
 
 ## 本课程的参考资料
