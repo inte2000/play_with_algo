@@ -36,6 +36,8 @@
 | blocks |  动态规划：方块消除 |
 | investment |  动态规划：投资问题 |
 | Matrix-chain |  动态规划：矩阵链乘问题 |
+| Hungary |  图论：匈牙利算法与二分图 |
+| CriticalPath |  图论：关键路径算法 |
 
 
 ## 本课程的参考资料
