@@ -40,7 +40,9 @@
 | CriticalPath |  图论：关键路径算法 |
 | Dijkstra |  图论：Dijkstra算法 |
 | Topological |  图论：图的拓扑排序算法 |
-
+| Euler |  图论：欧拉图与弗罗莱（Fleury）算法 |
+| fleury |  图论：欧拉图与弗罗莱（Fleury）算法 |
+| max_flow |  图论：最大流问题 |
 
 ## 本课程的参考资料
 
