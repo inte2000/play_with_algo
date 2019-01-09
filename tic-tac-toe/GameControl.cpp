@@ -1,0 +1,55 @@
+#include "StdAfx.h"
+#include <iostream>
+#include <string>
+#include <cassert>
+#include "GameControl.h"
+
+GameControl::GameControl(void)
+{
+    srand((unsigned)time(NULL));
+}
+
+GameControl::~GameControl(void)
+{
+}
+
+void GameControl::SetPlayer(Player *player, int player_id)
+{ 
+    player->SetPlayerId(player_id);
+    player->SetGameState(&m_gameState);
+    m_players[player_id] = player; 
+}
+
+Player* GameControl::GetPlayer(int player_id)
+{
+    std::map<int, Player *>::iterator it = m_players.find(player_id);
+    if(it != m_players.end())
+    {
+        return it->second;
+    }
+
+    return NULL;
+}
+
+void GameControl::InitGameState(const GameState& state)
+{
+    m_gameState = state;
+}
+
+int GameControl::Run()
+{
+    while(!m_gameState.IsGameOver())
+    {
+        int playerId = m_gameState.GetCurrentPlayer();
+        Player *currentPlayer = GetPlayer(playerId);
+        assert(currentPlayer != NULL);
+
+        int np = currentPlayer->GetNextPosition();
+        m_gameState.SetGameCell(np, playerId);
+        m_gameState.PrintGame();
+        m_gameState.SwitchPlayer();
+    }
+    int winner = m_gameState.GetWinner();
+
+    return winner;
+}
