@@ -20,7 +20,6 @@ int b_final[BUCKETS_COUNT] = { 4, 4, 0 };
 double sd = 200.9;
 
 
-
 bool IsProcessedState(const std::deque<BucketsState>& states, const BucketsState& newState)
 {
     auto it = find_if(states.begin(), states.end(), 
